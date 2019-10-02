@@ -1,12 +1,13 @@
 import React from 'react';
 import logo from '../../assets/olive-logo.png';
 import './App.css';
+import QuestionsPage from '../QuestionsPage/QuestionsPage';
 
 function App() {
   return (
     <div className="App">
       <div className="Mobile-container">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -17,7 +18,8 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
+        <QuestionsPage/>
       </div>
     </div>
   );
