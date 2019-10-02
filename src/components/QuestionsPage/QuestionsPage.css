@@ -1,7 +1,38 @@
 .QuestionsPage {
+  border: 1px solid #2B2B2B;
   width: 100%;
+  height: 100%;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-flow: column wrap;
   font-size: 18px;
+  color: #2B2B2B;
+}
+
+.Questions-num {
+  border: 1px solid #53AEBA;
+  font-size: 42px;
+}
+
+.Questions-num p {
+  margin: 0px 0px 0px 20px;
+}
+
+.Questions-content {
+  font-size: 28px;
+}
+
+
+.btn {
+  border: none;
+  border-radius: 25px;
+  margin-top: 20px;
+  width: 120px;
+  padding: 10px 32px;
+  text-align: center;
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #53AEBA;
 }

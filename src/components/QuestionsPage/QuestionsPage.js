@@ -6,8 +6,16 @@ class QuestionsPage extends Component {
   render () {
     return (
       <div class='QuestionsPage'>
-        <p>QuestionsPage</p>
-        <p>{questions[5]}</p>
+        <div class='Questions-num'>
+          <p>Q5</p>
+        </div>
+        <div class='Questions-content'>
+          <p>{questions[5]}</p>
+        </div>
+       <div class='Questions-btn-wrap'>
+          <div className='btn btn-quiz'>NEXT QUESTION</div>
+          <div className='btn btn-learn'>PREVIOUS QUESTION</div>
+       </div>
       </div>
     );
   }
