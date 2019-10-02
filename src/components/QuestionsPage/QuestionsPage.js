@@ -7,7 +7,7 @@ class QuestionsPage extends Component {
     return (
       <div class='QuestionsPage'>
         <p>QuestionsPage</p>
-        <p>{questions[1]}</p>
+        <p>{questions[5]}</p>
       </div>
     );
   }

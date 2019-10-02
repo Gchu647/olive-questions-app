@@ -1,3 +1,7 @@
 .QuestionsPage {
-  font-size: 30px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  font-size: 18px;
 }
