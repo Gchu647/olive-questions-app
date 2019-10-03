@@ -35,7 +35,7 @@ class QuestionsPage extends Component {
           <p>{this.state.question}</p>
         </div>
        <div class='Questions-btn-wrap'>
-          <div className='btn'>NEXT QUESTION</div>
+          <div className='btn' onClick={this.pickQuestion}>NEXT QUESTION</div>
           <div className='btn'>PREVIOUS QUESTION</div>
        </div>
       </div>
