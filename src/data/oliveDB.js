@@ -1,4 +1,4 @@
-const questions = [  
+const oliveDB = [  
   'Given the choice of anyone in the world, whom would you want as a dinner guest?',
   'Would you like to be famous? In what way?',
   'Before making a telephone call, do you ever rehearse what you are going to say? Why?',
@@ -13,4 +13,4 @@ const questions = [
   'If you could wake up tomorrow having gained any one quality or ability, what would it be?'
 ];
 
-export default questions;
+export default oliveDB;
