@@ -13,8 +13,8 @@ class QuestionsPage extends Component {
           <p>{questions[5]}</p>
         </div>
        <div class='Questions-btn-wrap'>
-          <div className='btn btn-quiz'>NEXT QUESTION</div>
-          <div className='btn btn-learn'>PREVIOUS QUESTION</div>
+          <div className='btn'>NEXT QUESTION</div>
+          <div className='btn'>PREVIOUS QUESTION</div>
        </div>
       </div>
     );
