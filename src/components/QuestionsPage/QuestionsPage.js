@@ -10,14 +10,19 @@ class QuestionsPage extends Component {
       question: 'hi'
     }
 
+    this.pickQuestion = this.pickQuestion.bind(this);
+  }
+
+  componentDidMount () {
+    this.pickQuestion();
   }
 
   pickQuestion() {
     let randomIndex = Math.floor(Math.random() * oliveDB.length);
     let randomQ = oliveDB.splice(randomIndex, 1)[0];
-    console.log('index: ', oliveDB.indexOf(randomQ)); // test id
+    console.log('index: ', randomIndex); // test id
 
-    this.setState({ vocab: randomQ });
+    this.setState({ question: randomQ });
   }
 
   render () {
