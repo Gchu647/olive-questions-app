@@ -7,29 +7,32 @@ class QuestionsPage extends Component {
     super(props);
 
     this.state = {
-      question: 'hi'
+      question: '',
+      questionList: shuffleArray(oliveDB), // function on the bottom
+      index: 0
     }
-
-    this.pickQuestion = this.pickQuestion.bind(this);
   }
 
   componentDidMount () {
-    this.pickQuestion();
+    this.setState(prevState => ({
+      question: prevState.questionList[0]
+    }));
+    console.log(this.state.questionList);
   }
 
-  pickQuestion() {
-    let randomIndex = Math.floor(Math.random() * oliveDB.length);
-    let randomQ = oliveDB.splice(randomIndex, 1)[0];
-    console.log('index: ', randomIndex); // test id
+  // pickQuestion() {
+  //   let randomIndex = Math.floor(Math.random() * oliveDB.length);
+  //   let randomQ = oliveDB.splice(randomIndex, 1)[0];
+  //   console.log('index: ', randomIndex); // test id
 
-    this.setState({ question: randomQ });
-  }
+  //   this.setState({ question: randomQ });
+  // }
 
   render () {
     return (
       <div class='QuestionsPage'>
         <div class='Questions-num'>
-          <p>Q5</p>
+          <p>Q{this.state.index + 1}</p>
         </div>
         <div class='Questions-content'>
           <p>{this.state.question}</p>
@@ -41,6 +44,18 @@ class QuestionsPage extends Component {
       </div>
     );
   }
+}
+
+function shuffleArray(arr) {
+  let i = arr.length - 1;
+
+  for (; i > 0; i--) { // moves the position of each index at least once
+    const j = Math.floor(Math.random() * (i + 1));
+    const temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+  }
+  return arr;
 }
 
 export default QuestionsPage;
