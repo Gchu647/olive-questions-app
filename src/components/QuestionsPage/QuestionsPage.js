@@ -7,10 +7,13 @@ class QuestionsPage extends Component {
     super(props);
 
     this.state = {
+      index: 0,
       question: '',
-      questionList: shuffleArray(oliveDB), // function on the bottom
-      index: 0
+      questionList: shuffleArray(oliveDB), // function on the bottom of page
     }
+
+    this.nextQuestion = this.nextQuestion.bind(this);
+    this.prevQuestion = this.prevQuestion.bind(this);
   }
 
   componentDidMount () {
@@ -20,13 +23,25 @@ class QuestionsPage extends Component {
     console.log(this.state.questionList);
   }
 
-  // pickQuestion() {
-  //   let randomIndex = Math.floor(Math.random() * oliveDB.length);
-  //   let randomQ = oliveDB.splice(randomIndex, 1)[0];
-  //   console.log('index: ', randomIndex); // test id
+  nextQuestion () {
+    if (this.state.index > 10)
+      return null;
+    
+    this.setState(prevState => ({
+      question: prevState.questionList[ prevState.index + 1],
+      index: prevState.index + 1
+    }));
+  }
 
-  //   this.setState({ question: randomQ });
-  // }
+  prevQuestion () {
+    if (this.state.index < 1)
+    return null;
+  
+    this.setState(prevState => ({
+      question: prevState.questionList[ prevState.index - 1],
+      index: prevState.index - 1
+    }));
+  }
 
   render () {
     return (
@@ -38,8 +53,8 @@ class QuestionsPage extends Component {
           <p>{this.state.question}</p>
         </div>
        <div class='Questions-btn-wrap'>
-          <div className='btn' onClick={this.pickQuestion}>NEXT QUESTION</div>
-          <div className='btn'>PREVIOUS QUESTION</div>
+          <div className='btn' onClick={this.nextQuestion}>NEXT QUESTION</div>
+          <div className='btn' onClick={this.prevQuestion}>PREVIOUS QUESTION</div>
        </div>
       </div>
     );
