@@ -55,8 +55,8 @@ class QuestionsPage extends Component {
         </div>
        <div class='Questions-btn-wrap'>
           <div className='btn next-btn' onClick={this.nextQuestion}>NEXT QUESTION</div>
-          <Link className='btn end-btn' to='/questions'>LAST QUESTION</Link>
-          <div className='btn' onClick={this.prevQuestion}>PREVIOUS QUESTION</div>
+          <Link className='btn end-btn' to='/finish'>LAST QUESTION</Link>
+          <div className='btn' onClick={this.prevQuestion}>PREV QUESTION</div>
        </div>
       </div>
     );
