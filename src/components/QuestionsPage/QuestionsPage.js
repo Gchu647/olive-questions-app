@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './QuestionsPage.css';
 import oliveDB from '../../data/oliveDB';
 
@@ -53,7 +54,8 @@ class QuestionsPage extends Component {
           <p>{this.state.question}</p>
         </div>
        <div class='Questions-btn-wrap'>
-          <div className='btn' onClick={this.nextQuestion}>NEXT QUESTION</div>
+          <div className='btn next-btn' onClick={this.nextQuestion}>NEXT QUESTION</div>
+          <Link className='btn end-btn' to='/questions'>LAST QUESTION</Link>
           <div className='btn' onClick={this.prevQuestion}>PREVIOUS QUESTION</div>
        </div>
       </div>

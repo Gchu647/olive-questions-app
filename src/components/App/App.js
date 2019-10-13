@@ -1,9 +1,9 @@
 import React from 'react';
-import logo from '../../assets/olive-logo.png';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import StartPage from '../StartPage/StartPage';
 import QuestionsPage from '../QuestionsPage/QuestionsPage';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import FinishPage from '../FinishPage/FinishPage';
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
         <Switch>
             <Route exact={true} path='/' component={StartPage} />
             <Route path='/questions' component={QuestionsPage} />
+            <Route path='/finish' component={FinishPage} />
         </Switch>
       </Router>
       </div>

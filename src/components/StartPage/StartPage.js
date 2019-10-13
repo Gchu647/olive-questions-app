@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './StartPage.css';
 import logo from '../../assets/olive-logo.png';
 
-const StartPage = props => {
+const StartPage = () => {
   return(
     <div className="StartPage">
       <div className='StartPage-logo-wrap'>
