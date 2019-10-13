@@ -7,24 +7,33 @@
   color: #2B2B2B;
 }
 
-.StartPage-logo {
-  width: 50%;
+.StartPage-logo-wrap {
+  /* border: 1px solid #53AEBA; */
+  display: flex;
+  justify-content: center;
+  margin-top: 180px;
 }
 
-.btn {
-  border: none;
-  border-radius: 25px;
-  margin-top: 20px;
-  width: 150px;
-  height: 15px;
-  padding-top: 13px;
-  padding-bottom: 8px;
+.StartPage-logo {
+  width: 55%;
+}
+
+.StartPage-content {
+  /* border: 1px solid #53AEBA; */
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-weight: 700;
-  font-size: 10px;
-  cursor: pointer;
-  color: #ffffff;
-  background-color: #53AEBA;
+}
+
+.StartPage-content p {
+  margin-top: 0px;
+  margin-bottom: 2px;
+  font-size: 20px;
+}
+
+.StartPage-btn-wrap {
+  /* border: 1px solid #53AEBA; */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
 }

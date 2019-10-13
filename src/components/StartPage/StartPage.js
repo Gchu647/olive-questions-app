@@ -6,11 +6,15 @@ import logo from '../../assets/olive-logo.png';
 const StartPage = props => {
   return(
     <div className="StartPage">
-      <img src={logo} className="StartPage-logo" alt="logo" />
+      <div className='StartPage-logo-wrap'>
+        <img src={logo} className="StartPage-logo" alt="logo" />
+      </div>
       <div class='StartPage-content'>
-          <p>12 Questions for</p>
-          <p>First Dates</p>
-          <Link className='btn' to='/questions'>START</Link>
+        <p>12 Questions for</p>
+        <p>First Dates</p>
+      </div>
+      <div class='StartPage-btn-wrap'>
+        <Link className='btn' to='/questions'>START</Link>
       </div>
     </div>
   );
