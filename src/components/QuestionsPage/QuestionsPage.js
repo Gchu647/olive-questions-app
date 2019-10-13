@@ -13,6 +13,7 @@ class QuestionsPage extends Component {
       questionList: shuffleArray(oliveDB), // function on the bottom of page
     }
 
+    this.switchButton = this.switchButton.bind(this);
     this.nextQuestion = this.nextQuestion.bind(this);
     this.prevQuestion = this.prevQuestion.bind(this);
   }
@@ -24,10 +25,15 @@ class QuestionsPage extends Component {
     console.log(this.state.questionList);
   }
 
+  switchButton () {
+    if (this.state.index > 10) {
+      return <Link className='btn' to='/finish'>DONE</Link>; 
+    }
+
+    return <div className='btn' onClick={this.nextQuestion}>NEXT QUESTION</div>;
+  }
+
   nextQuestion () {
-    if (this.state.index > 10)
-      return null;
-    
     this.setState(prevState => ({
       question: prevState.questionList[ prevState.index + 1],
       index: prevState.index + 1
@@ -54,8 +60,7 @@ class QuestionsPage extends Component {
           <p>{this.state.question}</p>
         </div>
        <div class='Questions-btn-wrap'>
-          <div className='btn next-btn' onClick={this.nextQuestion}>NEXT QUESTION</div>
-          <Link className='btn end-btn' to='/finish'>LAST QUESTION</Link>
+          {this.switchButton()}
           <div className='btn' onClick={this.prevQuestion}>PREV QUESTION</div>
        </div>
       </div>

@@ -28,7 +28,7 @@
 }
 
 .Questions-content p {
-  border: 1px solid #53AEBA;
+  /* border: 1px solid #53AEBA; */
   width: 85%;
   padding-top: 20px;
 }
@@ -41,6 +41,6 @@
   align-items: center;
 }
 
-.next-btn {
+.no-btn {
   display: none;
 }
