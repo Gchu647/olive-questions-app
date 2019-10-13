@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './StartPage.css';
+import logo from '../../assets/olive-logo.png';
 
 const StartPage = props => {
   return(
     <div className="StartPage">
-      <p>smoke test!</p>
+      <img src={logo} className="StartPage-logo" alt="logo" />
+      <div class='StartPage-content'>
+          <p>12 Questions for</p>
+          <p>First Dates</p>
+      </div>
     </div>
   );
 }
