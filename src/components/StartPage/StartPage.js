@@ -10,6 +10,7 @@ const StartPage = props => {
       <div class='StartPage-content'>
           <p>12 Questions for</p>
           <p>First Dates</p>
+          <Link className='btn' to='/questions'>START</Link>
       </div>
     </div>
   );
