@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../assets/olive-logo.png';
 import './App.css';
+import StartPage from '../StartPage/StartPage';
 import QuestionsPage from '../QuestionsPage/QuestionsPage';
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
         >
           Learn React
         </a> */}
-        <QuestionsPage/>
+        <StartPage />
       </div>
     </div>
   );
