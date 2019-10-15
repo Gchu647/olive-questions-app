@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/olive-questions-app/static/css/main.87d065f1.chunk.css",
+    "main.js": "/olive-questions-app/static/js/main.0b61df89.chunk.js",
+    "main.js.map": "/olive-questions-app/static/js/main.0b61df89.chunk.js.map",
+    "runtime-main.js": "/olive-questions-app/static/js/runtime-main.6f49be59.js",
+    "runtime-main.js.map": "/olive-questions-app/static/js/runtime-main.6f49be59.js.map",
+    "static/js/2.a7b36eb6.chunk.js": "/olive-questions-app/static/js/2.a7b36eb6.chunk.js",
+    "static/js/2.a7b36eb6.chunk.js.map": "/olive-questions-app/static/js/2.a7b36eb6.chunk.js.map",
+    "index.html": "/olive-questions-app/index.html",
+    "precache-manifest.ee86f96933ea0a8c7cf3e81ababfe68e.js": "/olive-questions-app/precache-manifest.ee86f96933ea0a8c7cf3e81ababfe68e.js",
+    "service-worker.js": "/olive-questions-app/service-worker.js",
+    "static/css/main.87d065f1.chunk.css.map": "/olive-questions-app/static/css/main.87d065f1.chunk.css.map",
+    "static/media/FinishPage.css": "/olive-questions-app/static/media/finish-bg.039db90a.png",
+    "static/media/QuestionsPage.css": "/olive-questions-app/static/media/question-bg.f22678fe.png"
+  }
+}
