@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/olive-questions-app/precache-manifest.3a08dd972158606af463130a5a910e6a.js"
+  "/olive-questions-app/precache-manifest.b04f733370edc5c8ebec2743d08b9af9.js"
 );
 
 self.addEventListener('message', (event) => {
